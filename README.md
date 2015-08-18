@@ -4,4 +4,6 @@
 
 >使用coffee开发,配合webstorm的file watcher
 
+>未来设想是油猴本地脚本通过jsonp调用nodejs,nodejs通过rest方式和发布在阿里云服务器的soa服务对接.
+
 >...
