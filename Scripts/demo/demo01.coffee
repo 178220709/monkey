@@ -1,5 +1,5 @@
-define(["lib/jquery/jquery-1.10.2", "lib/underscore/underscore",], ()->
-  console.log("demo01 is loading!")
+define([ "text!sc/widget/index.html", "css!sc/widget/widget.css",  ], (widgetHTML)->
+  console.log("demo01 is loading! and widgetHTML is "+ widgetHTML)
 
   $.ajax({
     type: "get",

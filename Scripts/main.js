@@ -22,10 +22,11 @@
   });
 
   require(["lib/jquery/jquery-1.10.2", "lib/underscore/underscore"], function() {
-    require(["sc/demo/demo01"], function() {
-      return console.log("demo01 is loaded");
+    require(["sc/demo/demo02"], function() {
+      return console.log("demo02 is loaded");
     });
     console.log("jquery underscore is loaded");
+    $("body").attr("ms-controller", "jsCtrl");
   });
 
 }).call(this);

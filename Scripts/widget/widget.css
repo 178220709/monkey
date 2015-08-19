@@ -1,0 +1,60 @@
+body{
+    min-height: 400px;
+}
+
+.js-widget  {
+    background-color: #212328;
+    height: 100%;
+    position: absolute;
+    right: 240px;
+    top: 50px;
+    width: 100px;
+    z-index: 998;
+}
+
+.js-widget .js-menu {
+    background-color: #212328;
+    height: 100%;
+    position: fixed;
+    right: -240px;
+    top: 0;
+    width: 100px;
+    z-index: 998;
+}
+
+.js-widget ul {
+    list-style: none;
+    padding: 60px 40px 0;
+}
+
+.js-widget ul li {
+    border-top: 1px solid #424650;
+    padding: 4px 0 5px;
+}
+
+.js-widget ul li a {
+    color: #80807e;
+    font: 300 15px/2em museo-sans, sans-serif;
+    text-decoration: none;
+}
+
+.js-widget ul li a:hover, .js-widget ul li a.active {
+    color: white;
+}
+
+.js-widget ul li:first-child {
+    border-top: none;
+}
+
+.js-widget .js-tip {
+    background: #f8f8f8 url(images/pfd-sprites.png) no-repeat left top;
+    cursor: pointer;
+    display: block;
+    height: 30px;
+    position: fixed;
+    text-indent: -8000px;
+    top: 10px;
+    right:30px
+    width: 34px;
+    z-index: 5000;
+}

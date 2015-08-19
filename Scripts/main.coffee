@@ -14,8 +14,9 @@ require.config(
 require(["lib/jquery/jquery-1.10.2",
          "lib/underscore/underscore"
   ], ( )->
-  require(["sc/demo/demo01"], ()-> console.log("demo01 is loaded"))
+  require(["sc/demo/demo02"], ()-> console.log("demo02 is loaded"))
   console.log("jquery underscore is loaded")
+  $("body").attr("ms-controller","jsCtrl")
   return
 )
 
