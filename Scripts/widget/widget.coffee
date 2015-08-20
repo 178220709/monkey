@@ -1,6 +1,15 @@
-define(["text!sc/widget/index.html", "css!sc/widget/widget.css",], (widgetHTML)->
-  console.log("demo01 is loading! and widgetHTML is " + widgetHTML)
+define(["css!sc/widget/widget.css"], ()->
+  unless widgetHTML
+    widgetHTML = '<div class="js-widget" ms-important="js-widgetCtrl">
+    <ul class="js-menu">
+       <li  ms-repeat="menuList">
+           <a href="javascript:void(0);"  ms-click="el.callback"  >{{el.text}}</a>
+       </li>
+    </ul>
+    <a  class="js-tip" style="opacity: 1;">Show Menu</a>
+    </div>'
 
+  console.log("demo01 is loading! and widgetHTML is " + widgetHTML)
   $("body").append(widgetHTML)
   menu = $(".js-widget .js-menu")
   tip = $(".js-widget .js-tip")
@@ -19,6 +28,5 @@ define(["text!sc/widget/index.html", "css!sc/widget/widget.css",], (widgetHTML)-
     avalon.scan()
     return avalon.modules["js-widgetCtrl"]
 
-  return {init:init}
-
+  return {init: init}
 )

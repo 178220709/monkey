@@ -1,5 +1,5 @@
-define([ "text!sc/widget/index.html", "css!sc/widget/widget.css",  ], (widgetHTML)->
-  console.log("demo01 is loading! and widgetHTML is "+ widgetHTML)
+define([  ], ()->
+  console.log("demo01 is loading! cross domain test " )
 
   $.ajax({
     type: "get",
