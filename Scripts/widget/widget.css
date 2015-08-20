@@ -1,22 +1,23 @@
 body{
     min-height: 400px;
+    height: 2000px;
 }
 
 .js-widget  {
-    background-color: #212328;
+
     height: 100%;
-    position: absolute;
-    right: 240px;
+    position: fixed;
+    right: 0px;
     top: 50px;
     width: 100px;
     z-index: 998;
 }
 
 .js-widget .js-menu {
-    background-color: #212328;
+
     height: 100%;
-    position: fixed;
-    right: -240px;
+    position: relative;
+    right: 0px;
     top: 0;
     width: 100px;
     z-index: 998;
@@ -51,10 +52,10 @@ body{
     cursor: pointer;
     display: block;
     height: 30px;
-    position: fixed;
+    position: absolute;
     text-indent: -8000px;
     top: 10px;
-    right:30px
+    right:0px;
     width: 34px;
-    z-index: 5000;
+    z-index: 999;
 }

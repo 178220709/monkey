@@ -1,7 +1,7 @@
-<div class="js-widget">
+<div class="js-widget" ms-important="js-widgetCtrl">
     <ul class="js-menu">
-       <li>
-           <a href="javascript:void(0);"  id="jsBtn1" >btn1</a>
+       <li  ms-repeat="menuList">
+           <a href="javascript:void(0);"  ms-click="el.callback"  >{{el.text}}</a>
        </li>
     </ul>
     <a  class="js-tip" style="opacity: 1;">Show Menu</a>

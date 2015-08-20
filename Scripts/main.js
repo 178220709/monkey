@@ -26,7 +26,6 @@
       return console.log("demo02 is loaded");
     });
     console.log("jquery underscore is loaded");
-    $("body").attr("ms-controller", "jsCtrl");
   });
 
 }).call(this);
