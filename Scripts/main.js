@@ -26,6 +26,7 @@
       return console.log("demo02 is loaded");
     });
     console.log("jquery underscore is loaded");
+    console.log($(".mart6").html());
   });
 
 }).call(this);

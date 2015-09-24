@@ -1,4 +1,4 @@
-define(["sc/widget/widget"], (widget)->
+define(["lib/jquery/jquery-1.11.3","sc/widget/widget"], ($,widget)->
   console.log( "  ready to init widget")
   widget.init([
     {text:"btn1",callback:()-> alert("this is btn1 click callback")},

@@ -4,11 +4,35 @@
         <title>monkey index</title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
-        <script>
+        <!--<script src="libs/jquery/jquery-1.10.2.js">  </script>-->
 
-        </script>
+
     </head>
     <body>
 
+    <button onclick="jsonpTest();"  style="cursor: pointer">jsonpTest</button>
+
+
+    <script>
+        function jsonpTest (){
+            $.ajax({
+                type: "post",
+                async: false,
+                data: {
+                    'uphone': '123',
+                    'password': '456'
+                },
+                url: "http://localhost:18080/spider/getSteel",
+                dataType: "jsonp",
+                jsonp: "jsonpRequest", //传递给服务端的参数名，告诉服务端是否需要返回jsonp，值是随机的，由jQuery自动管理
+                success: function(json) {
+                    alert(json.uname);
+                },
+                error: function(p1,p2,p3) {
+                    alert('fail');
+                }
+            });
+        }
+    </script>
     </body>
 </html>
