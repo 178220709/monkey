@@ -4,7 +4,7 @@ var concat = require('gulp-concat');
 
 gulp.task("default", function () {
 
-    return gulp.src("**/*.js")   //路劲
+    return gulp.src("**/*.js")
         // Traces all modules and outputs them in the correct order.
         .pipe(amdOptimize("scripts/main",
             {

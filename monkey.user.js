@@ -9,7 +9,6 @@
 // @date        26/08/2013
 // @modified    05/09/2014
 // @include     *
-// @require     http://localhost:10089/libs/jquery/jquery-1.10.2.js
 // @require     http://localhost:10089/libs/avalon/avalon.js
 // @grant       unsafeWindow
 // @run-at      document-end
@@ -27,8 +26,14 @@ String.prototype.format = function () {
     });
 };
 var str = "this is :{0} and {1} , and  {0}".format("arg1","arg2")
+var main = "Scripts/main";
+var url = document.location.href;
 
-require(["Scripts/main?_v="+ (new Date - 0)], function () {
+if(url.indexOf("release=true")>0)
+{
+    main = "dist/main"
+}
+require([main +"?_v="+ (new Date - 0)], function () {
 
 });
 

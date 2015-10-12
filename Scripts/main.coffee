@@ -9,9 +9,10 @@ require.config(
   paths:
     "lib": "libs"
     "sc": "Scripts"
+    "jquery": "libs/jquery/jquery-1.11.3"
 )
 
-require(["lib/jquery/jquery-1.10.2",
+require(["jquery",
          "lib/underscore/underscore"
   ], ()->
   require(["sc/demo/demo02"], ()-> console.log("demo02 is loaded"))

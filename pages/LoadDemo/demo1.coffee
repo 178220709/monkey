@@ -11,7 +11,7 @@ require.config(
     "sc": "Scripts"
 )
 
-require(["lib/jquery/jquery-1.10.2",
+require(["jquery",
          "lib/underscore/underscore"
         ],
   ()->

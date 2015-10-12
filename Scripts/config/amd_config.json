@@ -1,0 +1,9 @@
+{
+  "baseUrl": "http://localhost:10089/",
+  "paths":{
+    "lib": "libs",
+    "sc": "Scripts",
+    "jquery": "libs/jquery/jquery-1.11.3",
+    "underscore": "libs/underscore/underscore"
+  }
+}

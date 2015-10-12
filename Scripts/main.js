@@ -21,7 +21,7 @@
     }
   });
 
-  require(["lib/jquery/jquery-1.10.2", "lib/underscore/underscore"], function() {
+  require(["lib/jquery/jquery-1.11.3", "lib/underscore/underscore"], function() {
     require(["sc/demo/demo02"], function() {
       return console.log("demo02 is loaded");
     });
